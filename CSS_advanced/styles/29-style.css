@@ -26,7 +26,7 @@
   --section-padding: 5rem 0;
   --section-header-padding: 0 0 3rem;
   --section-footer-padding: 3rem 0 0;
-  --section-body-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem 0;
   --section-footer-align: center;
   --footer-padding: 5rem 0 1rem;
   --nav-item-font-family: var(--font-family-title);
@@ -35,7 +35,7 @@
   --nav-item-letter-spacing: 0.04rem;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
-  --nav-item-link-hover: var(--color-primary);
+  --nav-item-link-hover: var(--color-white);
   --section-tagline-margin: 0;
   --button-display: inline-block;
   --button-padding: 1.5rem 3rem;
@@ -58,7 +58,7 @@
   --text-color: var(--color-white);
   --section-title-color: var(--color-white);
   background-color: var(--color-black);
-  --button-color: var(--color-white)
+  --button-color: var(--color-white);
 }
 
 *, *::before, *::after {
@@ -71,7 +71,7 @@ html {
 }
 
 .header {
-	padding: var(--header-padding);
+  padding: var(--header-padding);
 }
 
 .header-logo {
@@ -148,11 +148,6 @@ body {
   line-height: var(--line-height-base);
 }
 
-a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
 a:link {
   color: var(--text-color);
   text-decoration: none;
@@ -226,7 +221,7 @@ a:active {
 }
 
 .section {
-	padding: var(--section-padding);
+  padding: var(--section-padding);
 }
 
 .section-header {
@@ -244,17 +239,18 @@ a:active {
 }
 
 .section-title {
-	font-family: var(--font-family-title);
-	font-size: var(--font-size-xx-large);
-	font-weight: var(--font-weight-bold);
-	margin: var(--section-title-margin);
-	color: var(--section-title-color);
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
 }
+
 .section-tagline {
   color: var(--color-primary);
   font-family: var(--font-family-title);
-  font-weight: var(--font-weight-bold);
   text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
   margin: var(--section-tagline-margin);
 }
 
